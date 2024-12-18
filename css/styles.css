@@ -69,7 +69,7 @@ body{
                     color: var(--color-blanco);
                     font-weight: 700;
                     font-size: 1.1rem;
-                    padding: 0.5rem 1rem;
+                    padding: 0.5rem .8rem;
                     transition: transform 0.3s;
 
                     &:hover {
@@ -83,6 +83,10 @@ body{
             
             }
 
+        }
+        .icon-cart{
+            width: 30px;
+            color: var(--color-primario);
         }
     }
 

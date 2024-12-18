@@ -4,9 +4,10 @@ E-Commerce
 Autor:
 Fesal La Rosa
 
-Nombre del repositorio.
-Descripción:
-https://github.com/FesalProgrammer/pre-entrega-proyecto-1.0.git
+URL del repositorio.
+https://github.com/FesalProgrammer/proyetoFinal
+
+URL del deploy:
 
 Breve descripción del proyecto:
 Proyecto academico sobre la construccion de un sitio web (E-commerce) para comprar productos. En el cual se deben aplicar los conocimientos adquiridos en HTML, CSS y Javascript. 
