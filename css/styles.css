@@ -82,6 +82,39 @@ body{
                 }
             
             }
+            li:last-child{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a{
+                    /* border: none; */
+                    /* border: 1px solid red;
+                    border-radius: 50%; */
+                    padding: 0.5rem;
+                    position: relative;
+                }
+                a:hover{
+                    border: 1px solid var(--color-primario);
+                    border-radius: 50%;
+                    .count{
+                        color: var(--color-blanco);
+                        background-color: var(--color-primario);
+                        border: 1px solid var(--color-blanco);
+
+                    }
+                }
+                .count{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    font-size: 12px;
+                    color: var(--color-primario);
+                    background-color: var(--color-blanco);
+                    padding: 0 0.25rem;
+                    border: 1px solid --color-primario;
+                    border-radius: 50%;
+                }
+            }
 
         }
         .icon-cart{
@@ -231,7 +264,7 @@ body{
 
 .price{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -240,25 +273,25 @@ body{
     font-size: 17px;
 }
 
-.price a{
+.price h3{
     color: var(--color-blanco);
     font-weight: 700px;
-}
+} 
 
 .btn-comprar{
     background-color: var(--color-primario);
-    padding: 5px 25px;
-    padding: 2px 15px;
-    border-radius: 15px;
-    margin-right: 0;
-    transition: transform 0.3s, opacity 0.5s ease-in-out;
+    font-weight: 700px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: var(--color-blanco);
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .btn-comprar:hover{
     background-color: var(--color-primario-oscuro);
-    transform: scale(0.95);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    
+    transform: scale(1.1);
 }
 
 .titulo-contacto{
@@ -466,4 +499,10 @@ body{
             }
         }
     }
+}
+
+.tableProduct h2{
+    color: var(--color-blanco);
+    text-align: center;
+    margin-top: 0;
 }

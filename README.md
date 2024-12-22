@@ -8,6 +8,7 @@ URL del repositorio.
 https://github.com/FesalProgrammer/proyetoFinal
 
 URL del deploy:
+https://fesalprogrammer.github.io/proyetoFinal/
 
 Breve descripción del proyecto:
 Proyecto academico sobre la construccion de un sitio web (E-commerce) para comprar productos. En el cual se deben aplicar los conocimientos adquiridos en HTML, CSS y Javascript. 
