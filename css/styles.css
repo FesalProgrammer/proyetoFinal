@@ -411,6 +411,33 @@ body{
         }
     }
 
+    .contenedorDetalle{
+        color: var(--color-blanco);
+        width:75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 60px;
+        img{
+            border-radius: 20px;
+        }
+        .textoDetalle{
+            h1{
+                font-size: 2.2rem;
+                font-weight: 700;
+            }
+            h2{
+                margin-top:20px;
+            }
+            .contenedorCreditos{
+                margin-top:20px;
+                display: flex;
+                justify-content:space-between;
+            }
+        }
+    }
+
 /*ESTILOS ESCRITORIO PARA EL FOOTER*/
 
 .footer {
