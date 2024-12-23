@@ -352,6 +352,65 @@ body{
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }    
 
+.limpiarCar {
+    display: flex;
+    justify-content: end;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-left: 22.3rem;
+    transition: all 0.3s ease-in-out;
+}
+    
+.limpiarCar:hover {
+    background-color: var(--color-primario-oscuro);
+    border: 1px solid var(--color-primario);
+    transform: scale(1.05);
+}
+.tableProduct {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 40rem;
+
+    .table {
+            thead {
+                background-color: var(--color-primario);
+                color: var(--color-blanco);
+    
+                tr th {
+                    border-radius: 10px;
+                    padding: 0.5rem;
+                }
+            }
+    
+            tbody {
+                background-color: var(--color-primario);
+                color: var(--color-blanco);
+                font-weight: 500;
+    
+                tr td {
+                    border: 3px solid var(--color-primario);
+                    border-radius: 10px;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    
+        p {
+            font-size: 1.2rem;
+            color: var(--color-blanco);
+            font-weight: 600;
+            margin-top: 1rem;
+            text-align: end;
+        }
+    }
+
 /*ESTILOS ESCRITORIO PARA EL FOOTER*/
 
 .footer {
