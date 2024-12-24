@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE-1.0</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="./assets/img/fotoLogo.jpg">
+</head>
+<body>
+    <header id="header" class="header" data-aos="zoom-in" data-aos-duration="1000">
+        <nav class="navegacion">
+            <a class="anclaLogo" href="#">
+                Logo
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="/index.html">Inicio</a></li>
+                <li class="listaItem"><a class="linkNav" href="/index.html">Productos</a></li>
+                <li class="listaItem"><a class="linkNav" href="#contacto">Contacto</a></li>
+                
+            </ul>
+        </nav>
+        <div data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
+            <form id="formShape" action="https://formspree.io/f/mwpkeokl" method="POST">
+                <h2 class="tituloContacto">Contacto</h2>
+                <div>
+                    <input type="text" placeholder="Nombre"  id="nombre" name="nombre">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="text" placeholder="Apellido"  id="apellido" name="apellido">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="email" placeholder="Email"  id="email" name="email">
+                    <div class="error-text"></div>
+                </div>
+                <textarea class="txtarea" name="message" id="message" cols="30" rows="5" placeholder="Mensaje:"></textarea>
+                
+                <div>
+                    <input id="botonRegistrarse" type="submit" value="Enviar">
+                </div>
+                
+            </form>
+
+        </div>
+        
+    </header>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./Js/main.js"></script>
+</body>
+</html>

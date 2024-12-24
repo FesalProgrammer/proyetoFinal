@@ -39,6 +39,7 @@ body{
     min-height: 125vh;
     top: 0;
     z-index: 10;
+    position: relative;
 
     .navegacion {
         display: flex;
@@ -294,49 +295,61 @@ body{
     transform: scale(1.1);
 }
 
-.titulo-contacto{
+.tituloContacto{
     font-size: 1.4rem;
     color: var(--color-blanco);
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.form{
-    background-color: var(--fondo-claro);
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 40px 45px;
-    min-height:80vh;
+/* div form{
+    display: flex;
+    justify-content: center;
+} */
+
+form{
+    position: absolute;
+    left: 500px;
+    bottom: -270px;
+    background-color: var(--color-secundario);
+    /* margin-top: 0;
+    margin-bottom: 0px; */
+    /* padding: 40px 300px; */
+    min-height:75vh;
     box-shadow: 0 0 20PX rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     text-align: center;
     width: 300px;
+    /* border: 1px solid red; */
 }
 
-.input-group{
+/* .input-group{
     display: flex;
     flex-direction: column;
     text-align: left;
     
-}
+} */
 
-.input, .txtarea{
+form .txtarea{
     padding: 17px 25px;
     border-radius: 25px;
     margin-bottom: 15px;
-    background-color: var(--color-blanco);
+    background-color: var(--color-secundario);
     border: 3px solid var(--color-primario);
     outline: none;
+    /* color: var(--fondo-claro); */
+    border: 2px solid var(--color-primario);
     
 }
 
-.input::placeholder, .txtarea::placeholder{
-    color: var(--fondo-claro);
+input::placeholder, .txtarea::placeholder{
+    color: var(--color-blanco);
 }
 
 .btn {
     padding: 17px 25px;
     font-size: 1rem;
-    color: var(--color-blanco);
+    /* color: var(--color-blanco); */
     border: 0;
     border-radius: 25px;
     background-color: var(--color-primario);
@@ -351,6 +364,59 @@ body{
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }    
+
+.tituloRegistrarse {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.seccionRegistrarse div {
+    margin-bottom: 5px;
+}
+
+.seccionRegistrarse input
+{
+    width: calc(100% - 20px);
+    padding: 5px 20px;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid var(--color-primario);
+    border-radius: 20px;
+    
+} 
+
+#nombre,
+#apellido,
+#email,
+#message,
+#botonRegistrarse {
+    width: 75%;
+    color: var(--color-blanco);
+    background-color: var(--fondo-claro);
+
+}
+
+.error-text {
+    color: red;
+    font-size: 0.9em;
+    height: 1em;
+    margin-left: 55px;
+}
+
+#botonRegistrarse{
+    margin-top: 15px;
+    margin-bottom: 28px;
+    transition: all 0.3s ease-in-out;
+}
+#botonRegistrarse:hover{
+    transform: scale(1.1);
+    background-color: var(--color-primario-oscuro);
+
+}
+
 
 .limpiarCar {
     display: flex;
@@ -441,6 +507,7 @@ body{
 /*ESTILOS ESCRITORIO PARA EL FOOTER*/
 
 .footer {
+    margin-top: 15px;
     color: var(--color-blanco);
     height: 15vh;
     min-width: 1100;
